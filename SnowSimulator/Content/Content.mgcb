@@ -24,3 +24,9 @@
 /processorParam:TextureFormat=Color
 /build:Textures/flake.png
 
+#begin Sounds/Wind-Mark_DiAngelo-1940285615.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sounds/Wind-Mark_DiAngelo-1940285615.mp3
+

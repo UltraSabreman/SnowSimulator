@@ -24,3 +24,5 @@ C:\Users\byelo\Documents\Code\SnowSimulator\SnowSimulator\bin\Windows\Debug\Shar
 C:\Users\byelo\Documents\Code\SnowSimulator\SnowSimulator\obj\x86\Debug\SnowSimulator.csprojResolveAssemblyReference.cache
 C:\Users\byelo\Documents\Code\SnowSimulator\SnowSimulator\obj\x86\Debug\SnowSimulator.exe
 C:\Users\byelo\Documents\Code\SnowSimulator\SnowSimulator\obj\x86\Debug\SnowSimulator.pdb
+C:\Users\byelo\Documents\Code\SnowSimulator\SnowSimulator\bin\Windows\Debug\Content\Sounds\Wind-Mark_DiAngelo-1940285615.wma
+C:\Users\byelo\Documents\Code\SnowSimulator\SnowSimulator\bin\Windows\Debug\Content\Sounds\Wind-Mark_DiAngelo-1940285615.xnb
