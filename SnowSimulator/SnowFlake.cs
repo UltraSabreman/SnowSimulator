@@ -81,12 +81,12 @@ namespace SnowSimulator {
             }
 
 			posX += velX;
-			if (posX < 0)
+			if (posX <= -10)
 				posX = maxX + posX;
-			else if (posX >= maxX)
+			else if (posX >= maxX + 10)
 				posX = posX - (maxX * Math.Floor(posX / maxX));
 
-            if (posY < maxY - (20 * size)) {
+            if (posY < maxY - (10 * size)) {
                 double rem = maxY - posY;
                 posY += (velY > rem ? rem : velY);
             } else if (!landed) {
@@ -99,6 +99,11 @@ namespace SnowSimulator {
             try {
                 float col = (float)size;
                 theBatch.Draw(flake, new Vector2((float)posX, (float)posY), null, new Color(col, col, col, 1f), 0f, Vector2.Zero, (float)size, SpriteEffects.None, 0f);
+                if (posX < (0 + (10 * size)))
+                    theBatch.Draw(flake, new Vector2((float)(maxX + posX), (float)posY), null, new Color(col, col, col, 1f), 0f, Vector2.Zero, (float)size, SpriteEffects.None, 0f);
+                else if (posX > (maxX - (10 * size)))
+                    theBatch.Draw(flake, new Vector2((float)(posX - (maxX * Math.Floor(posX / maxX))), (float)posY), null, new Color(col, col, col, 1f), 0f, Vector2.Zero, (float)size, SpriteEffects.None, 0f);
+
             } catch (Exception) { }
 		}
 
